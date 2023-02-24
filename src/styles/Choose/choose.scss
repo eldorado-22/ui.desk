@@ -1,0 +1,138 @@
+#choose {
+  .choose {
+    h3 {
+      font-weight: 520;
+      font-size: 54px;
+      text-align: center;
+      color: #151414;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 24px;
+      text-align: center;
+      color: #3B433E;
+      padding-bottom: 20px;
+
+    }
+
+    &--block {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 30px 0;
+
+      &__easy {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+
+        span {
+          font-weight: 540;
+          font-size: 28px;
+          text-align: center;
+          color: #181D19;
+          padding: 15px 0;
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 18px;
+          text-align: center;
+          background: linear-gradient(180deg, #39463F 0%, #101612 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+        }
+      }
+
+      &__map {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+
+        span {
+          font-weight: 540;
+          font-size: 28px;
+          text-align: center;
+          color: #181D19;
+          padding: 15px 0;
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 18px;
+          text-align: center;
+          background: linear-gradient(180deg, #39463F 0%, #101612 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+        }
+      }
+
+      &__organic {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+
+        span {
+          font-weight: 540;
+          font-size: 28px;
+          text-align: center;
+          color: #181D19;
+          padding: 15px 0;
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 18px;
+          text-align: center;
+          background: linear-gradient(180deg, #39463F 0%, #101612 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+        }
+      }
+
+
+    }
+
+    &--numbers {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+      &__forty {
+        h5 {
+          font-weight: 600;
+          font-size: 44px;
+          text-align: center;
+          color: #000000;
+        }
+
+      }
+
+      &__nine {
+        h5 {
+          font-weight: 600;
+          font-size: 44px;
+          text-align: center;
+          color: #000000;
+        }
+      }
+
+      &__twelve {
+        h5 {
+          font-weight: 600;
+          font-size: 44px;
+          text-align: center;
+          color: #000000;
+        }
+      }
+    }
+
+  }
+}

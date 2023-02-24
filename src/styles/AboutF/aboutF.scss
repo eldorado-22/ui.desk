@@ -1,0 +1,63 @@
+#aboutF {
+  padding-top: 80px;
+  .aboutF {
+    padding: 30px 0;
+    &--text-img {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      //flex-direction: column;
+
+      &__text {
+        h3 {
+          font-weight: 500;
+          font-size: 54px;
+          color: #151414;
+        }
+
+        p {
+          font-weight: 370;
+          font-size: 22px;
+          color: #181D19;
+        }
+
+        button {
+          padding: 15px 25px;
+          background: linear-gradient(180deg, #64BB47 0%, #2C9553 100%);
+          border-radius: 50px;
+          font-weight: 400;
+          font-size: 24px;
+          border: none;
+          text-align: center;
+          color: white;
+          transition: .6s;
+
+          &:hover {
+            background: transparent;
+            color: #5FB848;
+            border: 1px solid #5FB848;
+          }
+        }
+      }
+      &__img {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        &--vegetable {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          padding: 20px 20px;
+
+          &__lemon {
+            padding: 20px 0;
+          }
+        }
+        &--green {
+          padding-top: 60px;
+        }
+      }
+    }
+  }
+}

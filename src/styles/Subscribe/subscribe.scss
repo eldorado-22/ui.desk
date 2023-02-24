@@ -1,0 +1,55 @@
+#subscribe {
+  padding: 50px;
+  .subscribe {
+    padding: 40px 0;
+    h2 {
+      font-weight: 500;
+      font-size: 36px;
+      text-align: center;
+      color: #151414;
+    }
+
+    p {
+      font-weight: 370;
+      font-size: 24px;
+      text-align: center;
+      color: #3B433E;
+    }
+
+    &--email {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 0;
+
+      input {
+        width: 330px;
+        height: 60px;
+        background: #FFFFFF;
+        border: 1.5px solid #bbb4b4;
+        border-radius: 165px;
+        padding: 0 15px;
+        outline: none;
+      }
+      button {
+        font-weight: 400;
+        font-size: 20px;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 20px 40px;
+        background: linear-gradient(180deg, #64BB47 0%, #2C9553 100%);
+        border-radius: 50px;
+        transition: .6s;
+        border: none;
+        margin: 0 20px;
+        &:hover {
+          background: transparent;
+          color: #5FB848;
+          border: 2px solid #5FB848;
+          transition: .6s;
+
+        }
+      }
+    }
+  }
+}

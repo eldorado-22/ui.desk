@@ -1,0 +1,73 @@
+#cook {
+  margin: 20px 0;
+
+  .cook {
+    &--chefs {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &__text {
+
+        h4 {
+          font-weight: 500;
+          font-size: 54px;
+          color: #151414;
+        }
+
+        p {
+          font-weight: 370;
+          font-size: 24px;
+          color: #181D19;
+        }
+
+        &--one {
+          display: flex;
+          align-items: center;
+
+          &__icons {
+            color: #6EBF4B;
+            font-size: 26px;
+          }
+
+          p {
+            padding: 0 10px;
+          }
+        }
+
+        &--two {
+          display: flex;
+          align-items: center;
+
+          &__icons {
+            color: #6EBF4B;
+            font-size: 26px;
+          }
+
+          p {
+            padding: 0 10px;
+          }
+
+        }
+
+        &--three {
+          display: flex;
+          align-items: center;
+
+          &__icons {
+            color: #6EBF4B;
+            font-size: 26px;
+          }
+
+          p {
+            padding: 0 10px;
+          }
+
+        }
+
+
+      }
+    }
+  }
+}
+

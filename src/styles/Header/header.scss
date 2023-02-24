@@ -1,0 +1,176 @@
+#header {
+  position: fixed;
+  width: 105%;
+  backdrop-filter: blur(5px);
+  padding: 10px 0;
+  transition: background-color 0.5s;
+  z-index: 999;
+  animation: animate 2s ease-in-out;
+
+  @keyframes animate {
+    0%{
+      transform: translateY(-800px);
+    }
+  }
+
+  .header {
+    margin: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &--nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      h1 {
+        padding: 0 40px 0 0;
+        font-weight: 500;
+        font-size: 26px;
+        color: #333333;
+      }
+
+      &__hac {
+        width: 90%;
+        padding: 0 0 0 30px;
+
+        a {
+          font-weight: 500;
+          font-size: 20px;
+          color: #2C3847;
+          padding: 0 30px;
+
+          &:hover {
+            color: #9dd23b;
+            transition: .6s;
+          }
+        }
+      }
+
+
+    }
+
+    &--shop {
+      padding: 20px 0;
+      display: flex;
+      align-items: center;
+
+      &__search {
+        font-size: 25px;
+        font-weight: 400;
+        width: 30px;
+        height: 30px;
+        transition: 1s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover{
+          color: #9dd23b;
+        }
+      }
+      &__basket{
+          a{
+            font-size: 25px;
+            padding: 0 10px;
+            color: #333333;
+            &:hover {
+              color: #9dd23b;
+            }
+          }
+
+      }
+
+      button {
+        font-weight: 400;
+        font-size: 20px;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 15px 25px;
+        border: none;
+        background: #494949;
+        border-radius: 27px;
+        margin-left: 20px;
+        transition: .6s;
+
+        &:hover {
+          background: transparent;
+          color: #494949;
+          border: 2px solid #494949;
+        }
+      }
+    }
+  }
+
+  .search {
+    width: 100%;
+    height: 70px;
+    background: rgba(42, 35, 11, 0.44);
+    position: absolute;
+    bottom: -70px;
+    transition: 1s;
+
+    input {
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      //background: transparent;
+      outline: 2px solid #888A9A;
+      color: #888A9A;
+      border: none;
+      padding-left: 20px;
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1392px) {
+  #header {
+    .header {
+      &--nav {
+        a {
+          width: 50%;
+        }
+      }
+
+      &--shop {
+        button {
+          width: 70%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1202px) {
+  #header {
+
+
+    .header {
+
+      &--nav {
+        a {
+          width: 10%;
+          font-size: 19px;
+        }
+      }
+
+      &--shop {
+        width: 40%;
+
+
+        button {
+          width: 60%;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
+
