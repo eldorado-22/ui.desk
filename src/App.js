@@ -8,21 +8,32 @@ import Main from "./pages/home/main";
 import HappyClient from "./components/HappyClients/happyClient";
 import Subscribe from "./components/Subscribe/subscribe";
 import Basket from "./pages/basket/basket";
+import {useState} from "react";
 
 
-function App() {
+
+
+function App()  {
+    const [dark, setDark] = useState(false)
+    function getDark() {
+        setDark(!dark)
+    }
+
     return (
-        <>
-            <Header/>
-            <Routes>
-                <Route path="/" element={<Main/>}/>
-                <Route path="about" element={<AboutF/>}/>
-                <Route path="testimonials" element={<HappyClient/>}/>
-                <Route path="subscribe" element={<Subscribe/>}/>
-                <Route path="basket" element={<Basket/>}/>
+        <div style={{
+            background: dark ? 'green' : '',
+            color: dark ? 'white' : '#blue'
+        }}>
+            <Header getDark={getDark} dark={dark}/>
+            <Routes getDark={getDark} dark={dark}>
+                <Route path="/" element={<Main/>} getDark={getDark} dark={dark}/>
+                <Route path="about" element={<AboutF/>} getDark={getDark} dark={dark}/>
+                <Route path="testimonials" element={<HappyClient/>} getDark={getDark} dark={dark}/>
+                <Route path="subscribe" element={<Subscribe/>} getDark={getDark} dark={dark}/>
+                <Route path="basket" element={<Basket/>} getDark={getDark} dark={dark}/>
             </Routes>
-            <Footer/>
-        </>
+            <Footer getDark={getDark} dark={dark}/>
+        </div>
     );
 }
 
